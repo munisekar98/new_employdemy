@@ -35,6 +35,7 @@
             <plugin>
                 <groupId>biz.aQute.bnd</groupId>
                 <artifactId>bnd-maven-plugin</artifactId>
+                <version>5.2.0</version>
                 <executions>
                     <execution>
                         <id>bnd-process</id>

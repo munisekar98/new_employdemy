@@ -68,6 +68,19 @@
                     <releaseProfiles>release</releaseProfiles>
                 </configuration>
             </plugin>
+            <!-- bnd-maven-plugin -->
+            <plugin>
+                <groupId>biz.aQute.bnd</groupId>
+                <artifactId>bnd-maven-plugin</artifactId>
+                <version>5.2.0</version> <!-- Make sure the version is correct -->
+                <executions>
+                   <execution>
+                      <goals>
+                         <goal>bnd-process</goal>
+                      </goals>
+                   </execution>
+                </executions>
+             </plugin>
             <!-- Maven Source Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
