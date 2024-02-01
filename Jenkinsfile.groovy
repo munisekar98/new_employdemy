@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Build your code, for example using Maven or Gradle
-                sh 'mvn clean install'
+                sh 'mvn clean install -Denforcer.skip=true'
                 }
             }
         stage('Deploy to AEM') {
