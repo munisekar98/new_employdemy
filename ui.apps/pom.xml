@@ -91,7 +91,7 @@
                             <filter>true</filter>
                         </subPackage>
                     </subPackages>
-                    <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
+                    <targetURL>http://13.49.72.14:4502/crx/packmgr/service.jsp</targetURL>
                 </configuration>
             </plugin>
 
