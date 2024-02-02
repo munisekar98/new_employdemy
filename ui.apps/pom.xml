@@ -86,6 +86,7 @@
                         <embedded>
                             <groupId>com.adobe.aem.guides</groupId> 
                             <artifactId>employdemy.core</artifactId>
+                            <target>/apps/employdemy/install</target>
                         </embedded>
                     </embeddeds>
                     <subPackages>
@@ -95,7 +96,7 @@
                             <filter>true</filter>
                         </subPackage>
                     </subPackages>
-                    <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
+                    <targetURL>http://13.49.72.14:${crx.port}/crx/packmgr/service.jsp</targetURL>
                 </configuration>
             </plugin>
 
