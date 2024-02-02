@@ -86,7 +86,6 @@
                         <embedded>
                             <groupId>com.adobe.aem.guides</groupId> 
                             <artifactId>employdemy.core</artifactId>
-                            <target>/apps/employdemy/install</target>
                         </embedded>
                     </embeddeds>
                     <subPackages>
@@ -95,8 +94,23 @@
                             <artifactId>core.wcm.components.all</artifactId>
                             <filter>true</filter>
                         </subPackage>
+                        <subPackage>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.core</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+                        <subPackage>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.content</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+                        <subPackage>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.config</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
                     </subPackages>
-                    <targetURL>http://13.49.72.14:${crx.port}/crx/packmgr/service.jsp</targetURL>
+                    <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
                 </configuration>
             </plugin>
 
