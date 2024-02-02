@@ -77,6 +77,13 @@
                 <configuration>
                     <verbose>true</verbose>
                     <failOnError>true</failOnError>
+                    <embeddeds>
+                        <embedded>
+                            <groupId>com.employdemy</groupId>
+                            <artifactId>employdemy.core</artifactId>
+                            <target>/apps/employdemy/install</target>
+                        </embedded>
+                    </embeddeds>
                     <subPackages>
                         <subPackage>
                             <groupId>com.adobe.cq</groupId>
