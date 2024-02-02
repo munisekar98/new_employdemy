@@ -75,8 +75,27 @@
                 <artifactId>content-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
+                    <group>com.employdemy</group>
                     <verbose>true</verbose>
                     <failOnError>true</failOnError>
+                    <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
+                    <properties>
+                        <acHandling>merge_preserve</acHandling>
+                    </properties>
+                    <embeddeds>
+                        <embedded>
+                            <groupId>com.adobe.aem.guides</groupId> 
+                            <artifactId>employdemy.core</artifactId>
+                        </embedded>
+                    </embeddeds>
+                    <subPackages>
+                        <subPackage>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.all</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+                    </subPackages>
+                    <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
                 </configuration>
             </plugin>
 
@@ -181,5 +200,10 @@
             <version>1.2.0-1.4.0</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+             <artifactId>core.wcm.components.all</artifactId>
+             <type>zip</type>
+         </dependency>
     </dependencies>
 </project>
