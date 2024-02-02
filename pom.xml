@@ -707,13 +707,13 @@ Bundle-DocURL:
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>core.wcm.components.content</artifactId>
                 <type>zip</type>
-                <version>${core.wcm.components.version}</version>
+                <version>2.11.0</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>core.wcm.components.config</artifactId>
                 <type>zip</type>
-                <version>${core.wcm.components.version}</version>
+                <version>2.11.0</version>
             </dependency>
 
 
